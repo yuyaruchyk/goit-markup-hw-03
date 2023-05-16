@@ -14,6 +14,11 @@
   --third-background-color: #f4f4fd;
 }
 
+
+* 
+{
+  box-sizing: border-box;
+}
 .list {
   list-style: none;
 }
@@ -36,9 +41,11 @@ img {
 .container {
 
   width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  margin: 0 auto; }
+  
 
 
 body {
