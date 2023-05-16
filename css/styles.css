@@ -20,6 +20,26 @@
 .link {
   text-decoration: none;
 }
+h1, h2, h3, h4, p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+.container {
+
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 body {
   font-family: Roboto, sans-serif;
