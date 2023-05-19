@@ -14,7 +14,6 @@
   --third-background-color: #f4f4fd;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -45,18 +44,17 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
 
   margin: 0 auto;
 }
-
-
 
 body {
   font-family: Roboto, sans-serif;
@@ -68,44 +66,41 @@ body {
 
 /*--logo--*/
 .header-container {
-    display: flex;
-    align-items: end;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px;
-    border-color: #E7E9FC;
-  }
+  display: flex;
+  align-items: end;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px;
+  border-color: #e7e9fc;
+}
 
 .header-nav {
-    display: flex;
-    align-items: end;
-  }
-  .header-menu {
-      display: flex;
-      align-items: end;
-      gap: 40px;
-    }
-    .adress-list {
-        display: flex;
-        align-items: end;
-        gap: 40px;
-      }
-      .page-adress {
-        margin-left: auto;
-        
-      }
+  display: flex;
+  align-items: end;
+}
+.header-menu {
+  display: flex;
+  align-items: end;
+  gap: 40px;
+}
+.adress-list {
+  display: flex;
+  align-items: end;
+  gap: 40px;
+}
+.page-adress {
+  margin-left: auto;
+}
 .logo {
-  
   margin-right: 76px;
-  
+
   font-family: 'Raleway', sans-serif;
-font-weight: 800;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-text-color);
-  
 }
 
 .logo-item {
@@ -154,10 +149,19 @@ font-weight: 800;
 
 /*------------Hero----------*/
 .hero {
+  padding-top: 188px;
+  padding-bottom: 292px;
+  align-items: center;
   background-color: var(--secondary-background-color);
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
+
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -165,26 +169,32 @@ font-weight: 800;
   color: var(--color-title-white);
 }
 
+
+
 .page-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
-  display: flex;
-  align-items: center;
+  display: block;
+  
   letter-spacing: 0.04em;
   cursor: pointer;
+
+  
+
 }
 
 .hero-btn {
  
-    
-    
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   color: var(--color-title-white);
 
   background-color: #4d5ae5;
-  
 }
 
 .hero-btn:hover {
@@ -195,7 +205,23 @@ font-weight: 800;
   background-color: #404bbf;
 }
 
+
+
+
+
+
 /*--------about--------*/
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: calc(1128- (3 * 24) / 4);
+}
 
 .top-title {
   font-weight: 500;
@@ -225,24 +251,60 @@ font-weight: 800;
 
   color: var(--secondary-text-color);
 }
-
+.about-us-title {
+  margin-bottom: 72px;
+}
+.about-us-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: calc(1128- (2+24) / 3);
+}
 /*----------Our-Team--------*/
 
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--third-background-color);
 }
-
+.team-title {
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+  gap: 24px;
+  
+}
 .team-member {
+  
   background-color: var(--background-color-main);
 }
+
+
+   
+  
+  
 
 /*--------Footer--------*/
 
 .page-footer {
+  padding: 100px 1020px 100px 156px;
+  
   background-color: var(--secondary-background-color);
 }
 
+
+
 .footer-text {
+  max-width: 264px;
+}
+
+.footer-text {
+  margin-top: 16px;
   color: var(--footer-text-color);
 }
 
@@ -266,3 +328,24 @@ font-weight: 800;
   color: var(--color-title-white);
   background-color: var(--color-hover-focus);
 }
+
+.list-portofolio-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+padding-bottom: 96px;
+
+ }
+ .portfolio-btn {
+
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ 
+
+ min-width: 126px;
+ height: 48px;
+ align-items: center;
+ text-align: center;
+}
+  
