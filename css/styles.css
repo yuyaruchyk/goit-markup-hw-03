@@ -79,12 +79,12 @@ body {
 }
 .header-menu {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 40px;
 }
 .adress-list {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 40px;
 }
 .page-adress {
